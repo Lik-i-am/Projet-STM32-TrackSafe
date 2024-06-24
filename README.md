@@ -81,6 +81,7 @@ Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut ê
 
 ### Exemple de code :
 
+## 8. Architecture et Technologie de TrackSafe :
 
 ![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/ab7bd885-770a-4256-9b8d-4c88eac1d78b)
 
