@@ -8,7 +8,7 @@
 
 ## 1. Placer votre TrackSafe sur le colis :
 
-Le TrackSafe doit être fixer solidement sur le colis pour garantir que les capteurs puissent détecter fidèlement les conditions de transport du colis.
+Le TrackSafe doit être fixé solidement sur le colis pour garantir que les capteurs puissent détecter fidèlement les conditions de transport du colis.
 
 
 ## 2. Alimenter le TrackSafe :
