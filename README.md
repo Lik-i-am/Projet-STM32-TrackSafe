@@ -26,9 +26,6 @@ Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut ê
   
   -  Seuil de détection : Lorsque l'accéléromètre détecte une accélération dépassant un certain seuil sur les axes X ou Y, cela est interprété comme un choc.
 
-### Exemple de code :
-
-
 
 ## 4. Détection de la température (I2C) :
 
@@ -39,8 +36,6 @@ Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut ê
    - Communication I2C : Le capteur de température communique avec le microcontrôleur STM32 via le protocole I2C.
    
    - Seuil de température : Lorsque la température détectée dépasse 30°C, une alarme est déclenchée.
-
-### Exemple de code :
 
 
 ## 5. Alarme et affichage des erreurs (BUZZER PWM + SPI) :
@@ -67,9 +62,6 @@ Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut ê
    
    - UART : Consultation de l'historique des événements via la communication UART.
 
-### Exemple de code :
-
-
 
 ## 7. Réglage de l'intensité de l'afficheur avec le potentiomètre (ADC) :
 
@@ -79,7 +71,6 @@ Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut ê
    
    - ADC : Conversion de la position du potentiomètre en signal numérique pour contrôler l'intensité de l'afficheur.
 
-### Exemple de code :
 
 ## 8. Architecture et Technologie de TrackSafe :
 
