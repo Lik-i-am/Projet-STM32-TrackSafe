@@ -11,7 +11,7 @@
 Le TrackSafe doit être fixé solidement sur le colis pour garantir que les capteurs puissent détecter fidèlement les conditions de transport du colis.
 
 
-## 2. Alimenter vos TrackSafe :
+## 2. Alimenter votre TrackSafe :
 
 Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut être une batterie rechargeable ou une alimentation externe via un connecteur approprié.
 
