@@ -13,7 +13,7 @@ Le TrackSafe doit être fixé solidement sur le colis pour garantir que les capt
 
 ## 2. Alimenter le TrackSafe :
 
-Le TrackSafe nécessite une source d'alimentation pour fonction. Cela peut être une batterie rechargeable ou une alimentation externe via un connecteur approprié.
+Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut être une batterie rechargeable ou une alimentation externe via un connecteur approprié.
 
 
 ## 3. Détection des chocs avec l'accéléromètre (I2C) :
