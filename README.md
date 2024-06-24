@@ -1,90 +1,94 @@
-# Projet-STM32-TrackSafe
-Projet STM32 TrackSafe (ATAROUWA Abdou-Malik / HADJ-SAID Matthieu)
-![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/4e396c55-f789-41fc-9763-3eace64e2061)
+# PROJET-STM32-TRACKSAFE
+# Projet STM32 TrackSafe (ATAROUWA Abdou-Malik / HADJ-SAID Matthieu)
 
-![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/afca8b87-c518-4847-936f-427cafaf6371)
-![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/905d0021-0714-49ca-9458-bfce000e7dd4)
+![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/cf14d9cc-38f7-46fb-a669-acc8b29d68b5)
 
-**I. Présentation TrackSafe**
-
-![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/40852d92-774c-45ee-bffc-ebe446194d62)
- 
-
-Dans un monde où le commerce électronique et les livraisons de colis prennent une place prépondérante, le suivi et la sécurité des colis sont essentiels.
-
-TrackSafe est un appareil innovant qui permet de suivre en temps réel l'état de transport des colis.
-
-**Objectifs :**
-
--             Améliorer la visibilité des envois.
--             Renforcer la sécurité des colis.
--             Optimiser l'efficacité logistique.
--             Augmenter la satisfaction client.
+![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/923e7ce3-e607-4075-9e74-10c4018784c4)
 
 
-**II - Solution Technique Argumentée**
+## 1. Placer votre TrackSafe sur le colis :
 
-**Architecture et Technologie de TrackSafe**
-
-![Créer une Figurine](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/923e94c0-ed2b-4cad-8b81-49d52d298c28)
-
-_Capteurs Intégrés :_
-
--             Accéléromètre et Gyroscope : Détection des chocs et manipulations.
--             Capteurs de Température et d'Humidité : Surveillance des conditions environnementales.
-
-_Connectivité :_
-
--             Réseaux  : Transmission des données en temps réel.
--             Cloud : Stockage des données en temps réel.
-
-_Autonomie :_
-
--             Batterie Rechargeable : Autonomie de plusieurs jours.
--             Gestion Intelligente de l'Énergie : Prolongation de la durée de vie de la batterie.
+Le TrackSafe doit être fixé solidement sur le colis pour garantir que les capteurs puissent détecter fidèlement les conditions de transport du colis.
 
 
-**III. Defi et Problèmatiques**
+## 2. Alimenter votre TrackSafe :
 
-_Défi Principal :_ Assurer la sécurité et l'intégrité des colis durant le transport.
+Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut être une batterie rechargeable ou une alimentation externe via un connecteur approprié.
 
-_Problèmes Identifiés :_
 
--             Pertes et dommages des colis.
--             Manque de visibilité en temps réel pour les expéditeurs et les destinataires.
--             Conditions de transport inadéquates (température, humidité).
--             Ouvertures non autorisées et manipulations suspectes.
+## 3. Détection des chocs avec l'accéléromètre (I2C) :
 
-_Impact de Ces Problèmes :_ 
+### Fonctionnement :
 
--             Retards de livraison, 
--             Insatisfaction client, 
--             Coûts supplémentaires pour les entreprises.
+  -  Accéléromètre : Utilisation d'un capteur accéléromètre pour détecter les chocs et les vibrations.
+  
+  -  Communication I2C : L'accéléromètre communique avec le microcontrôleur STM32 via le protocole I2C.
+  
+  -  Seuil de détection : Lorsque l'accéléromètre détecte une accélération dépassant un certain seuil sur les axes X ou Y, cela est interprété comme un choc.
 
-**IV. Résolution**
+### Exemple de code :
 
-Comment TrackSafe Résout Ces Problèmes ?
 
--         _Surveillance Continue :_ Suivi en temps réel grâce à la connectivité et aux capteurs intégrés.
--         _Alertes Proactives :_ Notifications instantanées en cas d'anomalies, permettant une intervention rapide.
--         _Analyse des Données :_ Utilisation de l'historique pour optimiser les processus logistiques et prévenir les problèmes futurs.
--         _Technologie Avancée :_
-            IoT (Internet des Objets) : Connexion aux réseaux et systèmes d'information logistique.
-            Blockchain : Traçabilité et intégrité des informations.
 
-**V. Conclusion et Perspectives**
+## 4. Détection de la température (I2C) :
 
-**Impact de TrackSafe :**
+### Fonctionnement :
 
--             Réduction des pertes et des dommages.
--             Amélioration de l'efficacité logistique et de la transparence.
--             Augmentation de la satisfaction client grâce à une visibilité totale.
+   - Détecteur de température : Utilisation d'un capteur de température pour surveiller les conditions environnementales.
+   
+   - Communication I2C : Le capteur de température communique avec le microcontrôleur STM32 via le protocole I2C.
+   
+   - Seuil de température : Lorsque la température détectée dépasse 30°C, une alarme est déclenchée.
 
-**Perspectives :**
+### Exemple de code :
 
--             Expansion des Fonctionnalités : Intégration de l'IA pour des prédictions encore plus précises.
--             Partenariats Stratégiques : Collaboration avec des entreprises logistiques pour une intégration plus large.
-      
-![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/6e59db1d-50ff-48b7-a707-5854c5a8cdc0)
 
-![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/acad080d-4ad6-4595-8678-469bdfd362fe)
+## 5. Alarme et affichage des erreurs (BUZZER PWM + SPI) :
+
+### Fonctionnement :
+
+   - Alarme sonore : Utilisation d'un buzzer pour alerter en cas de choc ou de température élevée.
+   
+   - Communication SPI : Utilisation du protocole SPI pour la communication avec d'autres périphériques si nécessaire.
+   
+   - PWM : Le buzzer est contrôlé par un signal PWM pour générer le son d'alarme.
+
+### Exemple de code :
+
+
+
+## 6. Consultation de l'historique via le port série (GPIO INTERRUPTION + AFFICHAGE LED + UART) :
+
+### Fonctionnement :
+
+   - Mot de passe : Utilisation d'une séquence de boutons pour entrer le mot de passe (1, 4, 3, 2) via GPIO interruptions.
+   
+   - Affichage LED : Indication visuelle pour chaque chiffre du mot de passe entré.
+   
+   - UART : Consultation de l'historique des événements via la communication UART.
+
+### Exemple de code :
+
+
+
+## 7. Réglage de l'intensité de l'afficheur avec le potentiomètre (ADC) :
+
+### Fonctionnement :
+
+   - Potentiomètre : Utilisation d'un potentiomètre pour ajuster l'intensité de l'afficheur.
+   
+   - ADC : Conversion de la position du potentiomètre en signal numérique pour contrôler l'intensité de l'afficheur.
+
+### Exemple de code :
+
+
+![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/ab7bd885-770a-4256-9b8d-4c88eac1d78b)
+
+![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/410cdbf5-4adf-45fd-b951-aad4bf910c11)
+
+# Conclusion :
+
+Le projet TrackSafe intègre diverses technologies pour surveiller et sécuriser les colis durant le transport. 
+Grâce à l'utilisation de capteurs et de modules de communication, TrackSafe offre une solution complète pour la détection des chocs et des variations de température, l'alerte sonore en cas d'anomalie, et la consultation de l'historique via une interface sécurisée.
+
+![image](https://github.com/Lik-i-am/Projet-STM32-TrackSafe/assets/173574043/8d59ce7b-6bb7-4704-803e-ca9168279582)
