@@ -8,7 +8,7 @@
 
 ## 1. Placer votre TrackSafe sur le colis :
 
-Le TrackSafe doit être fixé solidement sur le colis pour garantir que les capteurs puissent détecter fidèlement les conditions de transport du colis.
+Le TrackSafe doit être fixé solidement sur le colis pour garantir que les capteurs puissent détecter fidèlement les conditions de transport.
 
 
 ## 2. Alimenter votre TrackSafe :
@@ -44,7 +44,7 @@ Le TrackSafe nécessite une source d'alimentation pour fonctionner. Cela peut ê
 
    - Alarme sonore : Utilisation d'un buzzer pour alerter en cas de choc ou de température élevée.
    
-   - Communication SPI : Utilisation du protocole SPI pour la communication avec d'autres périphériques si nécessaire.
+   - Communication SPI : Utilisation du protocole SPI pour la communication avec un afficheur 7 segments.
    
    - PWM : Le buzzer est contrôlé par un signal PWM pour générer le son d'alarme.
 
